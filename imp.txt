@@ -1,0 +1,13 @@
+pagesize
+logicaladdress
+offset
+framenumber
+physicaladdress
+
+pagenumber = logicaladdress/pagesize
+offset = logicaladdress % pagesize
+
+framnumber = pageTable[pagesize]
+
+physicaladdress = framenumber * pagesize + offset
+
